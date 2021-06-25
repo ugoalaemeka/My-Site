@@ -137,19 +137,66 @@ img {
 .skill-row{
     animation-name: move;
     animation-duration: 8s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+}
+.field{
+    padding-bottom: 20px;
+}
+.email-box{
+    width: 15%;
+    padding: 8px;
+    border-radius: 4px;
+    border:1px solid silver
 }
 @keyframes move{
   0% {
-      transition: translateX(20px);
+      transition: translateX(25px);
   }
   50% {
-      transform: translate(100px);
+      transform: translate(25px);
   }
   75% {
-      transform: translate(-100px);
+      transform: translate(-50px);
   }
   100% {
-      transform: translate(100px);
+      transform: translate(25px);
   }
 }
+
+
+@media (max-width:600px){
+    .land{
+        width: 70%;
+    }
+    .nav-bar{
+        
+        list-style: none;
+        display: inline-block;
+        
+        padding: 2rem 2rem 0 0.5rem;
+        margin-top: 1rem;
+    }
+    .nav-link{
+        width: 100%;
+    }
+    .intro{
+        width: 80%;
+    }
+    .skill-row{
+        width: 80%;
+    }
+    .contact-me{
+        width: 100%;
+    }
+    .contact-message{
+        width: 80%;
+    }
+    .email-box{
+        width: 40%;
+        padding: 8px;
+        border-radius: 4px;
+        border:1px solid silver;
+        margin-bottom: 20px;
+    }
+}
+
